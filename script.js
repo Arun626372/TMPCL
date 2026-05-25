@@ -1,0 +1,5 @@
+const hamb=document.querySelector('.hamb');const nav=document.querySelector('.nav');if(hamb){hamb.addEventListener('click',()=>nav.classList.toggle('open'))}
+const roleSelect=document.querySelector('#role');const amountBox=document.querySelector('#amountBox');const payBtn=document.querySelector('#razorpayBtn');const categorySelect=document.querySelector('#grade');function updateAmount(){if(!roleSelect)return;let amount=roleSelect.value==='All-Rounder'?1299:999;amountBox.textContent='₹'+amount;payBtn.textContent='Pay ₹'+amount+' & Register';}
+if(roleSelect){roleSelect.addEventListener('change',updateAmount);updateAmount();}
+if(categorySelect){categorySelect.addEventListener('change',()=>{const dob=document.querySelector('#dob'); if(categorySelect.value==='D' && dob && !dob.value){alert('D Category only U19 players ke liye hai. DOB/age proof zaroor add karein.')}})}
+if(payBtn){payBtn.addEventListener('click',e=>{e.preventDefault();alert('Razorpay integration ready hai. assets/script.js me RAZORPAY_KEY_ID add karne ke baad live payment chalega. Backend webhook required hoga.');})}
