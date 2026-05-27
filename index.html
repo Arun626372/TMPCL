@@ -8,37 +8,155 @@
   <link rel="stylesheet" href="styles.css">
   <script src="https://checkout.razorpay.com/v1/checkout.js"></script>
 </head>
-<body data-page="home" class="home-rebuild exact-prize-body">
+<body data-page="home" class="home-rebuild home-prize-real">
+  <div class="stadium-bg"></div>
+
+  <header class="topbar">
+    <div class="wrap nav">
+      <a class="brand brand-only" href="index.html" aria-label="TMPCL Home">
+        <img src="tmpcl-logo.png" alt="TMPCL official logo">
+      </a>
+      <nav class="links">
+        <a href="index.html" data-nav="home">Home</a>
+        <a href="registration.html" data-nav="registration">Register</a>
+        <a href="categories.html" data-nav="categories">Categories</a>
+        <a href="teams.html" data-nav="teams">Teams</a>
+        <a href="gallery.html" data-nav="gallery">Gallery</a>
+        <a href="news.html" data-nav="news">News</a>
+        <a href="partners.html" data-nav="partners">Partners</a>
+        <a href="about.html" data-nav="about">About</a>
+        <a href="contact.html" data-nav="contact">Contact</a>
+      </nav>
+      <a class="btn nav-cta" href="registration.html">Register Now</a>
+      <button class="hamb" aria-label="Open menu">☰</button>
+    </div>
+  </header>
+
   <main>
-    <section class="exact-prize-showcase" aria-label="TMPCL prize pool and awards homepage">
-      <img src="home-prize-exact.png" alt="TMPCL Player Trials Registration Open ₹50 Lakh Prize Pool & Awards">
-      <a class="hotspot hs-home" href="index.html" aria-label="Home"></a>
-      <a class="hotspot hs-about" href="about.html" aria-label="About"></a>
-      <a class="hotspot hs-trials" href="registration.html" aria-label="Trials"></a>
-      <a class="hotspot hs-teams" href="teams.html" aria-label="Teams"></a>
-      <a class="hotspot hs-awards" href="#awards-detail" aria-label="Awards"></a>
-      <a class="hotspot hs-media" href="gallery.html" aria-label="Media"></a>
-      <a class="hotspot hs-contact" href="contact.html" aria-label="Contact"></a>
-      <a class="hotspot hs-register-top" href="registration.html" aria-label="Register now"></a>
-      <a class="hotspot hs-register-main" href="registration.html" aria-label="Register now"></a>
-      <a class="hotspot hs-view-awards" href="#awards-detail" aria-label="View awards"></a>
+    <section class="prize-hero-v2">
+      <div class="hero-lights"></div>
+      <div class="wrap hero-v2-grid">
+        <div class="hero-v2-copy">
+          <span class="eyebrow premium-chip">PLAYER TRIALS REGISTRATION OPEN</span>
+          <h1 class="hero-v2-title">₹50 Lakh <span>Prize Pool & Awards</span></h1>
+          <p class="hero-v2-tagline">MP's Biggest Tennis Ball Cricket Talent Hunt. Register, compete, win big and get recognized on the biggest tennis ball cricket stage of Madhya Pradesh.</p>
+          <div class="hero-actions">
+            <a class="btn hero-main-btn" href="registration.html">Register Now →</a>
+            <a class="btn ghost hero-ghost-btn" href="#prize-pool">View Awards</a>
+          </div>
+          <div class="hero-proof-line">
+            <span>Razorpay Secure Registration</span>
+            <span>Official Registration ID</span>
+            <span>Digital Trial Pass</span>
+            <span>U19 Verified Category</span>
+          </div>
+        </div>
+        <div class="hero-v2-visual">
+          <img src="hero-player.png" alt="TMPCL player visual">
+        </div>
+      </div>
+      <div class="wrap hero-mini-prizes">
+        <article class="hero-mini-card gold-card">
+          <img src="hero-trophy.png" alt="Champion trophy">
+          <div>
+            <small>Champion Team</small>
+            <strong>₹20,00,000</strong>
+          </div>
+        </article>
+        <article class="hero-mini-card silver-card">
+          <img src="hero-runner.png" alt="Runner up trophy">
+          <div>
+            <small>Runner-Up Team</small>
+            <strong>₹10,00,000</strong>
+          </div>
+        </article>
+        <article class="hero-mini-card bike-card">
+          <img src="hero-bike.png" alt="Bullet bike award">
+          <div>
+            <small>Player of the Series</small>
+            <strong>Bullet Bike</strong>
+          </div>
+        </article>
+      </div>
     </section>
 
-    <section id="awards-detail" class="section awards-detail-section">
+    <section id="prize-pool" class="section prize-showcase-section">
       <div class="wrap">
         <div class="section-head center-head">
-          <span class="eyebrow">AWARDS BREAKDOWN</span>
-          <h2>Prize Pool & <span class="green">Special Awards</span></h2>
-          <p>Same premium prize design ke niche clear details bhi add ki gayi hain, jisse user ko amount aur award rules clean samajh aaye.</p>
+          <span class="eyebrow">PRIZE POOL & SPECIAL AWARDS</span>
+          <h2>Play Big. <span class="green">Win Bigger.</span></h2>
+          <p>Big team rewards, performance-based awards and premium recognition built to attract serious cricket talent.</p>
         </div>
-        <div class="award-detail-grid">
-          <div class="award-detail big"><b>Champion Team</b><strong>₹20,00,000</strong><span>Winner team prize money</span></div>
-          <div class="award-detail big"><b>Runner-Up Team</b><strong>₹10,00,000</strong><span>Second team prize money</span></div>
-          <div class="award-detail big"><b>Player of the Series</b><strong>Bullet Bike</strong><span>Tournament best player award</span></div>
-          <div class="award-detail"><b>Player of the Match</b><strong>₹10,000</strong><span>Each match</span></div>
-          <div class="award-detail"><b>Super Striker</b><strong>₹50,000</strong><span>Tournament award</span></div>
-          <div class="award-detail"><b>Super Four</b><strong>₹50,000</strong><span>Boundary impact award</span></div>
-          <div class="award-detail"><b>Super Sixes</b><strong>₹50,000</strong><span>Maximum hitting award</span></div>
+
+        <div class="prize-visual-grid">
+          <article class="prize-visual-card champion-card">
+            <div class="prize-image-wrap"><img src="award-gold.png" alt="Champion team trophy"></div>
+            <div class="prize-copy-wrap">
+              <small>Champion Team</small>
+              <strong>₹20,00,000</strong>
+              <p>Massive winning prize for the title-winning TMPCL team.</p>
+            </div>
+          </article>
+
+          <article class="prize-visual-card runner-card">
+            <div class="prize-image-wrap"><img src="award-silver.png" alt="Runner-up team trophy"></div>
+            <div class="prize-copy-wrap">
+              <small>Runner-Up Team</small>
+              <strong>₹10,00,000</strong>
+              <p>High-value reward for the second-best team of the tournament.</p>
+            </div>
+          </article>
+
+          <article class="prize-visual-card series-card">
+            <div class="prize-image-wrap"><img src="award-bike.png" alt="Bullet bike player of the series award"></div>
+            <div class="prize-copy-wrap">
+              <small>Player of the Series</small>
+              <strong>Bullet Bike</strong>
+              <p>A premium grand reward for the most impactful tournament player.</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="special-awards-v2">
+          <article class="mini-award-card">
+            <div class="mini-award-icon">★</div>
+            <div>
+              <small>Player of the Match</small>
+              <strong>₹10,000</strong>
+              <span>Each Match</span>
+            </div>
+          </article>
+          <article class="mini-award-card">
+            <div class="mini-award-icon">⚡</div>
+            <div>
+              <small>Super Striker Award</small>
+              <strong>₹50,000</strong>
+              <span>Tournament Award</span>
+            </div>
+          </article>
+          <article class="mini-award-card">
+            <div class="mini-award-icon">4</div>
+            <div>
+              <small>Super Four Award</small>
+              <strong>₹50,000</strong>
+              <span>Boundary Impact Award</span>
+            </div>
+          </article>
+          <article class="mini-award-card">
+            <div class="mini-award-icon">6</div>
+            <div>
+              <small>Super Sixes Award</small>
+              <strong>₹50,000</strong>
+              <span>Power Hitting Award</span>
+            </div>
+          </article>
+        </div>
+
+        <div class="prize-trust-bar">
+          <div><b>✔</b><span>Razorpay Secure Registration</span></div>
+          <div><b>✔</b><span>Official Registration ID</span></div>
+          <div><b>✔</b><span>Digital Trial Pass</span></div>
+          <div><b>✔</b><span>U19 Category Verified</span></div>
         </div>
       </div>
     </section>
@@ -48,7 +166,7 @@
         <div>
           <span class="eyebrow">OFFICIAL TEAM STRUCTURE</span>
           <h2 class="section-title">18 Player <span class="green">Team Formula</span></h2>
-          <p class="muted big-muted">Every TMPCL team will follow a balanced player structure. D category is reserved only for U19 players with valid age proof.</p>
+          <p class="muted big-muted">Every TMPCL team will follow a balanced player structure so trials, selections and final squads stay fair and professional. D category is reserved only for U19 players.</p>
           <div class="hero-actions"><a class="btn" href="teams.html">View Team Structure</a><a class="btn ghost" href="registration.html">Join Trials</a></div>
         </div>
         <div class="team-formula-bar">
@@ -70,10 +188,25 @@
           <h2>Simple Registration, <span class="green">Professional Process</span></h2>
         </div>
         <div class="process-grid">
-          <div class="process-card"><b>01</b><h3>Fill Player Form</h3><p>Submit role, age, district and cricket details.</p></div>
-          <div class="process-card"><b>02</b><h3>Pay via Razorpay</h3><p>Secure online payment for fast confirmation.</p></div>
-          <div class="process-card"><b>03</b><h3>Get Trial ID</h3><p>Receive registration ID and digital trial pass.</p></div>
-          <div class="process-card"><b>04</b><h3>Attend Trials</h3><p>Perform and get shortlisted for TMPCL teams.</p></div>
+          <div class="process-card"><b>01</b><h3>Fill Player Form</h3><p>Submit your role, age, district and important cricket details.</p></div>
+          <div class="process-card"><b>02</b><h3>Pay via Razorpay</h3><p>Secure online payment through Razorpay for fast confirmation.</p></div>
+          <div class="process-card"><b>03</b><h3>Get Trial ID</h3><p>Receive your registration ID and digital trial pass instantly.</p></div>
+          <div class="process-card"><b>04</b><h3>Attend Trials</h3><p>Perform in trials and get shortlisted for TMPCL team opportunities.</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section why-premium-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div><span class="eyebrow">WHY PLAY TMPCL?</span><h2>Built For <span class="green">Serious Talent</span></h2></div>
+          <p>Prize pool, structured trials, U19 opportunity, team selection and league recognition — everything designed to make TMPCL feel like a real, premium cricket platform.</p>
+        </div>
+        <div class="grid grid-4 why-grid">
+          <div class="card pro-card"><div class="icon">🏆</div><h3>Big Prize Pool</h3><p>₹50 lakh prize pool and attractive awards create strong motivation for players.</p></div>
+          <div class="card pro-card"><div class="icon">🎯</div><h3>Selection Focus</h3><p>Real trials, shortlisting process and category-based team structure.</p></div>
+          <div class="card pro-card"><div class="icon">👥</div><h3>U19 Chance</h3><p>Every team has 3 compulsory D category U19 players.</p></div>
+          <div class="card pro-card"><div class="icon">📸</div><h3>Recognition</h3><p>Media, gallery, updates and visibility for top-performing players.</p></div>
         </div>
       </div>
     </section>
@@ -82,7 +215,7 @@
       <div class="wrap">
         <div class="section-head">
           <div><span class="eyebrow">LEAGUE MEDIA</span><h2>Gallery, News & <span class="green">Partners</span></h2></div>
-          <p>Explore league moments, news updates and partner highlights.</p>
+          <p>Explore the latest league moments, news updates and official partner highlights.</p>
         </div>
         <div class="media-teaser-grid">
           <a class="media-teaser" href="gallery.html"><img src="gallery-preview.png" alt="TMPCL Gallery"><span>Event Gallery</span></a>
